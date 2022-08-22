@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 describe('AppComponent', () => {
   beforeEach(() =>
     TestBed.configureTestingModule({
-      declarations: [AppComponent],
+      declarations: [AppComponent]
     })
   );
 
@@ -13,8 +13,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const element = fixture.nativeElement;
-    expect(element.querySelector('h1').textContent)
-      .withContext('You should have an `h1` with the text Ponyracer')
-      .toContain('Ponyracer');
+    expect(element.querySelector('h1').textContent).withContext('You should have an `h1` with the text Ponyracer').toContain('Ponyracer');
   });
 });

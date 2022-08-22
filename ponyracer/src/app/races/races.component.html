@@ -1,0 +1,6 @@
+<section>
+  <div *ngFor="let race of races">
+    <h2>{{ race.name }}</h2>
+    <p>{{ startInstant | date: 'short' }}</p>
+  </div>
+</section>
